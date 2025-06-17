@@ -7,12 +7,12 @@ I am given 4 files (`1.complex`, `2.complex`, `3.complex`, `4.complex`) and a th
 
 ![](images/walkie_hackie_1.png)
 
-Using [Universal Radio Hacker](https://github.com/jopohl/urh) I can analyze these `.complex` files and see
+Using [Universal Radio Hacker](https://github.com/jopohl/urh) I can analyze these `.complex` files.
 
 Usually, you might see some encoding or some kind of redundancy thrown in to help with clock recovery and error correction. But here is nothing of that...this signal is just raw.
 There’s a pattern at the start — a sync sequence to help the receiver lock onto the sender's clock.
 
-Each Signal starts with **preamble** ("aaaaaaaa") , then there is a **sync word** ("73214693") and then the **payload** ("a2ff84" or "a1ff14" or "b1ff57" or "b2ff24" for each `.complex` file). 
+Each signal starts with **preamble** ("aaaaaaaa") , then there is a **sync word** ("73214693") and then the **payload** ("a2ff84" or "a1ff14" or "b1ff57" or "b2ff24" for each `.complex` file). 
 
 ![](images/walkie_hackie_2.png)
 
